@@ -1,0 +1,82 @@
+.navbar-brand {
+    animation-name: MoveToRight;
+    animation-duration: 2s;
+}
+.navbar-nav a.nav-link {
+    animation-name: MoveToTop;
+    animation-duration: 1s;
+    transition: 0.5s;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out;
+}
+
+@keyframes MoveToTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+        font-style: italic;
+    }
+
+    80% {
+        opacity: 0.5;
+        transform: translateX(20px);
+        font-style: italic;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        font-style: normal;
+    }
+}
+
+.carousel-main .carousel-caption h3 {
+    animation-name: MoveToRight;
+    animation-duration: 2s;
+    transition: 0.5s ease-in-out;
+}
+
+@keyframes MoveToRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    80% {
+        opacity: 0.5;
+        transform: translateX(20px);
+        font-style: italic;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        font-style: normal;
+    }
+}
+
+.carousel-main .carousel-caption p {
+    animation-name: MoveToLeft;
+    animation-duration: 2s;
+    transition: 0.5s ease-in-out;
+}
+
+@keyframes MoveToLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+        font-style: italic;
+    }
+
+    80% {
+        opacity: 0.5;
+        transform: translateX(20px);
+        font-style: italic;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        font-style: normal;
+    }
+}
