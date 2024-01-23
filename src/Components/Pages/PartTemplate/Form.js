@@ -25,7 +25,7 @@ function FormBox() {
   const handleInputChange = (event) => {
     const target = event.target;
     const name = target.name;
-    const value = target.value;
+    // const value = target.value;
     setErrors({ ...errors, [name]: target.validationMessage });
   };
 
